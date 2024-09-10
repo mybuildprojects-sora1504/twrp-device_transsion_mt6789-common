@@ -47,6 +47,9 @@ fi
 
 export LC_ALL="C"
 
+# Define lunch combo
+add_lunch_combo tecno_lh7n-eng
+
 # Clone to fix build on minimal manifest
 git clone https://android.googlesource.com/platform/external/gflags/ -b android-12.1.0_r4 external/gflags
 
@@ -60,4 +63,3 @@ if [ $RET -ne 0 ];then
 else
     echo "OK: All patched"
 fi
-
